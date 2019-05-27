@@ -1,0 +1,8 @@
+@import "reset.css";
+@import "layout.css";
+@font-face {
+  font-family: "ftanima-Regular";
+  src: url("../font/ftanima-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

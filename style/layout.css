@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+  transition: all .3s ease;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+main {
+  padding-top: 22px;
+}
+
+html {
+  font-family: 'ftanima-Regular';
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  margin: 2px 0 0 2px;
+}
+
+p {
+  font-family: 'ftanima-Regular';
+  font-size: 24px;
+  line-height: 150%;
+}
+
+h1, h2 {
+  font-size: 62px;
+}
+
+.hello h1 {
+  margin: 0 0 5px 200px;
+}
+
+.hello h2 {
+  margin: 0 0 0 243px;
+}
+
+.girlmac {
+  margin-left: 430px;
+  width: 550px;
+}
+
+.arrow {
+  width: 30px;
+  margin: 30px 0 30px 700px;
+}
+
+.start h1 {
+  margin: 0 0 40px 420px;
+}
+
+.smile {
+  margin: 0 0 40px 680px;
+}
+
+.smile p + .girllay {
+  margin-top: 5px;
+}
+
+.smile p {
+  font-size: 24px;
+}
+
+.girllay {
+  position: relative;
+  float: right;
+  margin: 0 100px 0 600px;
+  top: -300px;
+}
+
+ .start p {
+   margin-left: 100px;
+ }
