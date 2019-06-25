@@ -2,17 +2,16 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
 
   transition: all .3s ease;
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #FEFEFE;
 }
 
 main {
-  padding-top: 70px;
+  margin: 70px 0 0 70px;
 }
 
 html {
@@ -24,7 +23,29 @@ nav {
   position: fixed;
   z-index: 100;
   width: 100%;
-  margin: 2px 0 0 2px;
+  margin: -60px 0 0 2px;
+}
+
+.menu {
+  -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+  -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+ -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+
+  position: fixed;
+ display:inline-block;
+ z-index: 100;
+  display: flex;
+  margin: 350px 0 0 -220px;
+}
+
+.menu a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu a + a {
+  margin-left: 50px;
 }
 
 p {
@@ -33,50 +54,310 @@ p {
   line-height: 150%;
 }
 
+
 h1, h2 {
   font-size: 72px;
 }
 
 .hello h1 {
-  margin: 0 0 5px 110px;
+  margin: 0 0 5px 100px;
 }
 
 .hello h2 {
-  margin: 0 0 0 173px;
+  margin: 0 0 0 133px;
 }
 
 .girlmac {
-  margin-left: 430px;
+  margin-left: 390px;
 }
 
 .arrow {
   width: 30px;
-  margin: 30px 0 30px 700px;
+  margin: 30px 0 30px 630px;
 }
 
 .start h1 {
-  margin: 30px 0 40px 400px;
+  margin: 30px 0 60px 330px;
+}
+
+.start p + p {
+  margin-bottom: 20px;
 }
 
 .smile {
-  margin: 0 0 40px 680px;
+  margin: 0 0 40px 610px;
 }
 
-.smile p + .girllay {
+.start p + .girllay {
   margin-top: 5px;
 }
 
-.smile p {
+.start p {
   font-size: 24px;
 }
 
 .girllay {
   position: relative;
   float: right;
-  margin: 0 37px 0 0;
-  top: -360px;
+  margin: -250px 150px 0 0;
 }
 
- .start p {
-   margin-left: 67px;
+
+.project {
+  margin-top: 250px;
+}
+
+ .project h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
  }
+
+ .project p {
+  font-size: 24px;
+  margin-bottom: 40px;
+ }
+
+ .project a {
+   text-decoration: none;
+   font-size: 30px;
+   color: #0055ff;
+ }
+
+ .ident, .post, .place, .branding {
+   width: 500px;
+ }
+
+
+ .img1, .img3 {
+   float: left;
+ }
+
+ /* .img2, .img4 {
+   float: right;
+ } */
+
+.img2 {
+  float: none;
+  left: 725px;
+  top: 2350px;
+  position: absolute;
+}
+
+ .post, .branding {
+   float: none;
+ }
+
+ .post {
+   margin-top: 190px;
+   margin-left: 50px;
+ }
+
+ .ident {
+   position: absolute;
+   float: none;
+   margin: 0 70px 145px 750px;
+ }
+
+.place {
+  top: 2950px;
+  position: absolute;
+  float: none;
+  left: 835px;
+}
+
+.img3 {
+  padding-top: 350px;
+}
+
+.branding {
+  position: absolute;
+  top: 3550px;
+  margin-left: 50px;
+}
+
+.img4 {
+  margin-top: 950px;
+}
+
+.links {
+  margin-top: 110px;
+  width: 100vw;
+  height: 630px;
+  background-color: #0055ff;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 48px;
+}
+
+
+.socialnet, .hse {
+  padding: 115px 0 115px 305px;
+}
+
+.look {
+  float: none;
+  position: absolute;
+  margin: 200px 0 0 800px;
+}
+
+.footer {
+  width: 100vw;
+  height: 270px;
+}
+
+/* МЕДИА-ЗАПРОСЫ */
+
+@media (max-width: 1025px) {
+  main {
+    margin: 30px 0 0 60px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  nav {
+    margin: -30px 0 0 2px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+
+  h1, h2 {
+    font-size: 50px;
+  }
+
+  .hello h1 {
+    margin: 0 0 5px 80px;
+    width: 900px;
+  }
+
+  .hello h2 {
+    margin: 0 0 0 110px;
+    width: 900px;
+  }
+
+  .girlmac {
+    width: 522px;
+    margin: 30px 0 30px 190px;
+  }
+
+  .project {
+    margin-top: -50px;
+  }
+
+  .arrow {
+    margin-left: 440px;
+  }
+
+  .smile {
+    margin-left: 420px;
+  }
+
+  .ident {
+    margin: 0 0 145px 500px;
+  }
+
+  .post {
+    padding: 350px 100px 0 0;
+  }
+
+  .img2 {
+    left: 500px;
+    top: 1850px;
+  }
+
+  .girllay {
+    width: 402px;
+    margin: -230px 20px 0 0;
+  }
+
+  .start h1 {
+    margin: 30px 0 60px 250px;
+  }
+
+  .project h1 {
+   font-size: 36px;
+   margin-bottom: 20px;
+  }
+
+  .project p {
+   font-size: 22px;
+  }
+
+  .project a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #0055ff;
+  }
+
+  .img1, .img2, .img3, .img4 {
+    max-width: 405px;
+  }
+
+  .ident p, .post p, .place p, .branding p {
+    width: 370px;
+  }
+.ident {
+  margin-right: 0;
+}
+
+
+  .place {
+    top: 2950px;
+    position: absolute;
+    float: none;
+    left: 750px;
+  }
+
+  .place h1 {
+    width: 320px;
+  }
+
+  .img3 {
+    padding-top: 50px;
+  }
+
+  .place {
+    top: 2170px;
+    left: 550px;
+  }
+
+  .img4 {
+    margin: 100px 0 0 450px;
+  }
+
+  .branding {
+    top: 2530px;
+  }
+
+  .links {
+    margin-top: 100px;
+    height: 556px;
+  }
+
+  .links a {
+    font-size: 44px;
+  }
+
+  .socialnet, .hse {
+    padding: 100px 0 100px 290px;
+  }
+
+  .look {
+  max-width: 234px;
+  float: none;
+  position: absolute;
+    margin: 140px 0 0 600px;
+  }
+
+  .footer {
+    height: 212px;
+  }
+
+}
